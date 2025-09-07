@@ -37,7 +37,8 @@ class App extends Component{
       {
         custormers.map(c =>  { 
           return(
-            <Custormer
+            <Custormer 
+                  key={c.id}
                   id={c.id}
                   image={c.image}
                   name={c.name}
